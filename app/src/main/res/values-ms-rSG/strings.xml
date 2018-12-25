@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Recipe</string>
+    <string name="signIn">log masuk</string>
+    <string name="remember">ingat saya</string>
+    <string name="name">nama</string>
+    <string name="recipeApp">"APLIKASI RESIPI "</string>
+    <string name="home">rumah</string>
+    <string name="profile">profil</string>
+    <string name="new_recipe">baru</string>
+    <string name="settings">tetapan</string>
+    <string name="pass">"kata laluan "</string>
+    <string name="lang">Bahasa</string>
+    <string name="color">"Tukar Warna "</string>
+    <string name="logOut">"log keluar "</string>
+    <string name="recipeName">Nama Resipi</string>
+    <string name="add">Tambah</string>
+    <string name="recipeLevel">"Tahap Kesukaran (1-10) "</string>
+    <string name="recipeSteps">"Langkah / Kaedah "</string>
+    <string name="recipeDesc">"Penerangan Ringkas "</string>
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Recipe</string>
+    <string name="signIn">Sign In</string>
+    <string name="remember">Remember Me</string>
+    <string name="name">Name</string>
+    <string name="pass">Password</string>
+    <string name="recipeApp">MY RECIPE APP</string>
+    <string name="home">home</string>
+    <string name="profile">profile</string>
+    <string name="settings">settings</string>
+    <string name="new_recipe">new</string>
+    <string name="lang">Language</string>
+    <string name="color">Change Theme</string>
+    <string name="logOut">Log Out</string>
+    <string name="recipeName">Recipe Name</string>
+    <string name="recipeDesc">Short Description</string>
+    <string name="recipeSteps">Steps/Method</string>
+    <string name="recipeLevel">Difficulty Level(1-10)</string>
+    <string name="add">add</string>
+    <string-array name="language">
+        <item> </item>
+        <item>English</item>
+        <item>Malay</item>
+    </string-array>
+
+</resources>
