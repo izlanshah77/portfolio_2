@@ -34,12 +34,14 @@ public class homePage extends AppCompatActivity {
 //HOMEPAGE LISTVIEW STUFF
         alRecipe = new ArrayList<>();
         lvRecipe = (ListView) findViewById(R.id.lvRecipe);
-        Recipe recipe1 = new Recipe("Steak", "yummy", "1.cook 2.eat", 3, R.drawable.foodpic1);
-        Recipe recipe2 = new Recipe("Fried Rice","this is a description","1.cook, 2.eat",3,R.drawable.foodpic2);
-        Recipe recipe3 = new Recipe("Roast Chicken","this is a description","1.cook, 2.eat",5,R.drawable.foodpic3);
-        Recipe recipe4 = new Recipe("Pho","this is a description","1.cook, 2.eat",5,R.drawable.foodpic4);
-        Recipe recipe5 = new Recipe("Pan Seared Salmon","this is a description","1.cook, 2.eat",5,R.drawable.foodpic5);
-        Recipe recipe6 = new Recipe("Mac 'N' Cheese","this is a description","1.cook, 2.eat",5,R.drawable.foodpic6);
+        Recipe recipe1 = new Recipe("Steak", "A simple Pan Seared Steak that can be done in less than 20 minutes", "1. Prep The steak. Allow it to get to room temp" +
+                "\n 2. Season heavily with salt and pepper.\n 3. Allow The pan to heat up with a neutral oil till sizzling. \n 4. Lay the steak away from you and press down into the pan. \n" +
+                "5. Cook for 3 mins a side until medium rare, or to your liking.\n 6. Rest the steak for half the amount of time you cooked it.", 4, R.drawable.foodpic1);
+        Recipe recipe2 = new Recipe("Fried Rice","this is a description","1.cook, 2.eat",5,R.drawable.foodpic2);
+        Recipe recipe3 = new Recipe("Roast Chicken","this is a description","1.cook, 2.eat",7,R.drawable.foodpic3);
+        Recipe recipe4 = new Recipe("Pho","this is a description","1.cook, 2.eat",8,R.drawable.foodpic4);
+        Recipe recipe5 = new Recipe("Pan Seared Salmon","this is a description","1.cook, 2.eat",3,R.drawable.foodpic5);
+        Recipe recipe6 = new Recipe("Mac 'N' Cheese","this is a description","1.cook, 2.eat",7,R.drawable.foodpic6);
         alRecipe.add(recipe1);
         alRecipe.add(recipe2);
         alRecipe.add(recipe3);

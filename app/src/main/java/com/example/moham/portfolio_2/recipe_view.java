@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class recipe_view extends AppCompatActivity {
     TextView tvTitle, tvName, tvRating, tvDesc, tvSteps;
     ImageView ivFood;
+    GridLayout gridlayout1;
+
 
 
 
@@ -26,6 +28,23 @@ public class recipe_view extends AppCompatActivity {
         tvDesc = findViewById(R.id.textRecDesc);
         tvSteps = findViewById(R.id.textRecSteps);
         ivFood = findViewById(R.id.ivFood);
+
+        Intent intentRecieved = getIntent();
+        String recname = intentRecieved.getStringExtra("name");
+        tvTitle.setText(recname);
+        tvName.setText(recname);
+        String desc = intentRecieved.getStringExtra("desc");
+        tvDesc.setText(desc);
+        String steps = intentRecieved.getStringExtra("steps");
+        tvSteps.setText(steps);
+        int rating = intentRecieved.getIntExtra("rating",0);
+        tvRating.setText("Difficulty Level: "+ Integer.toString(rating) + "/10");
+        int img = intentRecieved.getIntExtra("image",0);
+        ivFood.setImageResource(img);
+
+        gridlayout1 = findViewById(R.id.mainGrid);
+
+        setToggleEvent(gridlayout1);
 
 
     }
