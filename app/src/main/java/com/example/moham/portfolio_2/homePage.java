@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridLayout;
 import android.widget.ListView;
@@ -47,6 +48,21 @@ public class homePage extends AppCompatActivity {
         alRecipe.add(recipe6);
         caRecipe = new CustomAdapter(this , R.layout.recipe_layout, alRecipe);
         lvRecipe.setAdapter(caRecipe);
+
+        lvRecipe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(homePage.this, recipe_view.class);
+                Recipe recipeChoice = alRecipe.get(position);
+                intent.putExtra("name",recipeChoice.getName());
+                intent.putExtra("desc", recipeChoice.getDescription());
+                intent.putExtra("steps", recipeChoice.getSteps());
+                intent.putExtra("rating", recipeChoice.getRating());
+                intent.putExtra("image", recipeChoice.getImage());
+                startActivity(intent);
+            }
+        });
 
 
 //HOMEPAGE GRID MENU STUFF

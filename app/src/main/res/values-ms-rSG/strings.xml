@@ -18,4 +18,5 @@
     <string name="recipeLevel">"Tahap Kesukaran (1-10) "</string>
     <string name="recipeSteps">"Langkah / Kaedah "</string>
     <string name="recipeDesc">"Penerangan Ringkas "</string>
+    <string name="add_recipe">TAMBAH RESIPI</string>
 </resources>

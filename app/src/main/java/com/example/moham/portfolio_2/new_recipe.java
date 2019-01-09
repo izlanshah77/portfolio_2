@@ -1,6 +1,8 @@
 package com.example.moham.portfolio_2;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -8,13 +10,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class new_recipe extends AppCompatActivity {
 
     GridLayout gridlayout1;
     EditText etName, etDesc, etSteps, etRating;
+    ImageView ivRecipe;
     Button btnAdd;
+    private static final int PICK_IMAGE = 100;
+    Uri imageUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,9 @@ public class new_recipe extends AppCompatActivity {
         etSteps = findViewById(R.id.etSteps);
         etRating = findViewById(R.id.etDifficulty);
         btnAdd = findViewById(R.id.btnAdd);
+        ivRecipe = findViewById(R.id.imageViewrECIPE);
+
+
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,4 +84,6 @@ public class new_recipe extends AppCompatActivity {
         }
 
     }
+
+
 }

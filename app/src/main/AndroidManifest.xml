@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".homePage" />
         <activity android:name=".new_recipe" />
-        <activity android:name=".settings_page"></activity>
+        <activity android:name=".settings_page" />
+        <activity android:name=".recipe_view"></activity>
     </application>
 
 </manifest>

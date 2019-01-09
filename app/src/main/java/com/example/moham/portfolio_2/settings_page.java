@@ -140,6 +140,10 @@ public class settings_page extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         if(item.getItemId()==0){
             settingsView = findViewById(R.id.settingsView);
+            settingsView.setBackgroundColor(Color.parseColor("#ffffff"));
+        }
+        else{
+            settingsView = findViewById(R.id.settingsView);
             settingsView.setBackgroundColor(Color.parseColor("#030303"));
         }
         return false;

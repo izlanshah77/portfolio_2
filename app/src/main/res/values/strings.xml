@@ -17,6 +17,8 @@
     <string name="recipeSteps">Steps/Method</string>
     <string name="recipeLevel">Difficulty Level(1-10)</string>
     <string name="add">add</string>
+    <string name="add_recipe">ADD RECIPE</string>
+
     <string-array name="language">
         <item> </item>
         <item>English</item>
