@@ -62,7 +62,7 @@
             android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/pass"
-            android:inputType="textPersonName" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnSignIn"
